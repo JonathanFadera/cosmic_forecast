@@ -44,7 +44,7 @@ https://wallpaperaccess.com/cool-galaxy - background image
 
 ## Displayed Application Link
 
-* 
+* https://jonathanfadera.github.io/cosmic_forecast/
 
 - - -
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
