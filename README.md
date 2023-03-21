@@ -26,21 +26,21 @@ The following image shows the web application's appearance and functionality:
 
 ## Resources
 
-    https://openweathermap.org/current - Current weather data
+https://openweathermap.org/current - Current weather data
 
-    https://openweathermap.org/forecast5 - 5-day weather forecast
+https://openweathermap.org/forecast5 - 5-day weather forecast
 
-    https://openweathermap.org/api/geocoding-api - Geocoding api
-    
-    https://getbootstrap.com/docs/5.2/getting-started/introduction/ - Bootstrap v5.2.x
+https://openweathermap.org/api/geocoding-api - Geocoding api
 
-    https://releases.jquery.com/ - jQuery CDN v.3.6.4
+https://getbootstrap.com/docs/5.2/getting-started/introduction/ - Bootstrap v5.2.x
 
-    https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch - using Fetch api
+https://releases.jquery.com/ - jQuery CDN v.3.6.4
 
-    https://cdnjs.com/libraries/moment.js - moment.js libraries
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch - using Fetch api
 
-    https://wallpaperaccess.com/cool-galaxy - background image
+https://cdnjs.com/libraries/moment.js - moment.js libraries
+
+https://wallpaperaccess.com/cool-galaxy - background image
 
 ## Displayed Application Link
 
