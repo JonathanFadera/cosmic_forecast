@@ -188,7 +188,7 @@ function renderCurrentWeather(data) {
 // Create the html from the API data for the next 5 days
 function renderForecast(data) {
   let html = "";
-  for (let i = 5; i < data.list.length; i = i + 7) {
+  for (let i = 5; i < data.list.length; i = i + 8) {
     let { dt } = data.list[i];
     let { temp, humidity } = data.list[i].main;
     let { speed } = data.list[i].wind;
