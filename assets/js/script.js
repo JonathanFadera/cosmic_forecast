@@ -32,7 +32,6 @@ function fetchGeocoding(event) {
     `https://api.openweathermap.org/geo/1.0/direct?q=${searchWord}&limit=10&appid=${apiKey}&units=imperial`)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       for (let i = 0; i < data.length; i++) {
         let name = data[i].name;
         let country = data[i].country;
@@ -55,7 +54,6 @@ function fetchGeocoding(event) {
 // Event listener on the list items and after push the item in array; calls other functions
 searchResultList.addEventListener("click", (event) => {
   if (event.target.matches("li")) {
-    console.log(event.target.textContent);
     let location = {
       name: event.target.textContent,
       lat: event.target.getAttribute("lat"),
@@ -69,7 +67,6 @@ searchResultList.addEventListener("click", (event) => {
     ) {
       historyLocations.unshift(location);
       storeLocation();
-      console.log(historyLocations);
     }
     clearResults();
     renderHistory();
@@ -91,9 +88,7 @@ function storeLocation() {
 
 // Remove object from array and call function to store the new array
 function removeLocation(location) {
-  console.log(historyLocations);
   historyLocations = historyLocations.filter((e) => e.name !== location);
-  console.log(historyLocations);
   storeLocation();
 }
 
@@ -113,8 +108,6 @@ function renderHistory() {
 // Get history of location
 let historyLocations =
   JSON.parse(localStorage.getItem("weatherLocations")) || [];
-console.log("History:");
-console.log(historyLocations);
 renderHistory();
 
 // Fetch current weather
@@ -124,7 +117,6 @@ function fetchCurrentWeather(lat, lon) {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       renderCurrentWeather(data);
     });
 }
@@ -136,7 +128,6 @@ function fetchForecast(lat, lon) {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       renderForecast(data);
     });
 }
@@ -212,7 +203,6 @@ function renderForecast(data) {
 // Event listener to delete the item or to render the weather
 historyEl.addEventListener("click", (event) => {
   if (event.target.matches(".btn-close")) {
-    console.log(event.target);
     let textToDelete = event.target.parentElement.textContent;
     console.log(textToDelete);
     removeLocation(textToDelete);
@@ -232,7 +222,6 @@ function fetchForecast(lat, lon) {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       renderForecast(data);
     });
 }
