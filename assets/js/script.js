@@ -241,7 +241,10 @@ function showPosition(position) {
   fetchCurrentWeather(lat, lon);
   fetchForecast(lat, lon);
 }
-
+// hide error alert
+function hideError() {
+  errorEl.style.display = "none";
+}
 function showError(error) {
   switch (error.code) {
     case error.PERMISSION_DENIED:
